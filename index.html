@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nextly — Your Ideas, Made Simple</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- header-->
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="#home" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="12" cy="12" r="8" fill="#7c7cf2"/>
+        <circle cx="20" cy="20" r="8" fill="#4c4cd8"/>
+      </svg>
+      Nextly
+    </a>
+
+    <!-- navigation button elements -->
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <a href="#home" class="active">Home</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- login and signup button-->
+
+    <div class="header-actions">
+      <a href="#login" class="btn btn-ghost">Log In</a>
+      <a href="#signup" class="btn btn-primary">Get Started</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- homepage texts-->
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">Build &nbsp;•&nbsp; Organize &nbsp;•&nbsp; Achieve</span>
+        <h1>Your Ideas,<span class="accent">Made Simple</span></h1>
+        <p class="lede">Nextly is the all-in-one productivity platform that helps you plan, collaborate and get things done — faster and easier, wherever you are.</p>
+
+        <div class="hero-ctas">
+          <a href="#signup" class="btn btn-primary" style="padding:15px 28px; font-size:1rem;">
+            Get Started Free
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <button class="btn btn-outline" type="button" id="watch-demo">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            Watch Demo
+          </button>
+        </div>
+
+        <ul class="trust-row">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+            No credit card required
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+            Free forever plan
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+            Cancel anytime
+          </li>
+        </ul>
+      </div>
+
+      <!-- dashboard showing tasks and progress -->
+
+      <div class="hero-art">
+        <span class="blob" aria-hidden="true"></span>
+        <div class="device" role="img" aria-label="Screenshot of the Nextly dashboard showing tasks, progress and calendar">
+          <div class="device-screen">
+            <div class="device-sidebar">
+              <div class="device-brand">
+                <svg width="14" height="14" viewBox="0 0 32 32" fill="none"><circle cx="12" cy="12" r="8" fill="#7c7cf2"/><circle cx="20" cy="20" r="8" fill="#fff"/></svg>
+                Nextly
+              </div>
+              <div class="device-nav-item active"><span class="device-dot"></span>Home</div>
+              <div class="device-nav-item"><span class="device-dot"></span>Tasks</div>
+              <div class="device-nav-item"><span class="device-dot"></span>Calendar</div>
+              <div class="device-nav-item"><span class="device-dot"></span>Team</div>
+              <div class="device-nav-item"><span class="device-dot"></span>Files</div>
+              <div class="device-nav-item"><span class="device-dot"></span>Settings</div>
+            </div>
+            <div class="device-main">
+              <div class="device-greeting">
+                <h3>Good morning, Alex! 👋</h3>
+                <p>Here's what's happening with your projects today.</p>
+              </div>
+              <div class="device-stats">
+                <div class="device-stat">
+                  <span class="label">Total Tasks</span>
+                  <span class="value">12</span>
+                  <span class="delta">+2 today</span>
+                </div>
+                <div class="device-stat">
+                  <span class="label">In Progress</span>
+                  <span class="value">5</span>
+                  <span class="delta">+1 today</span>
+                </div>
+                <div class="device-stat">
+                  <span class="label">Completed</span>
+                  <span class="value">7</span>
+                  <span class="delta">+3 today</span>
+                </div>
+              </div>
+              <div class="device-panels">
+                <div class="device-panel">
+                  <h4>Recent Tasks</h4>
+                  <div class="device-task">Design landing page <span class="tag">Design</span></div>
+                  <div class="device-task">API integration <span class="tag">Dev</span></div>
+                  <div class="device-task">Team meeting <span class="tag">Meetings</span></div>
+                  <div class="device-task">Write documentation <span class="tag">Docs</span></div>
+                </div>
+                <div class="device-panel">
+                  <h4>Upcoming</h4>
+                  <div class="device-event">Team meeting <span>10:00</span></div>
+                  <div class="device-event">Product demo <span>2:00</span></div>
+                  <div class="device-event">Design review <span>4:00</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg class="plant" viewBox="0 0 100 140" aria-hidden="true">
+          <path d="M50 90 C30 80 20 50 40 30 C50 55 50 70 50 90 Z" fill="#3f7a4f"/>
+          <path d="M50 90 C70 78 78 48 58 26 C50 52 50 70 50 90 Z" fill="#4f8f5f"/>
+          <rect x="30" y="90" width="40" height="40" rx="6" fill="#e7e2d7"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Why Choose Nextly?</span>
+        <h2>Everything You Need to Stay Productive</h2>
+        <p>Powerful features, simple design, and the flexibility to work your way. Nextly helps you stay focused and turn your goals into reality.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon icon-indigo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+          </div>
+          <h3>Task Management</h3>
+          <p>Organize your work with customizable task lists, set priorities and meet deadlines with ease.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 19c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6"/><circle cx="17" cy="9" r="2.6"/><path d="M15.5 13.2c2.9.4 5 2.6 5 5.8"/></svg>
+          </div>
+          <h3>Team Collaboration</h3>
+          <p>Work together seamlessly with your team, share updates and keep everyone on the same page.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon icon-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/><path d="M8 14l2 2 4-4"/></svg>
+          </div>
+          <h3>Smart Calendar</h3>
+          <p>Plan your day, set reminders and never miss an important meeting or deadline.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon icon-orange">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 18a4.5 4.5 0 01-1-8.9A5.5 5.5 0 0116.9 8a4 4 0 01.6 7.9"/></svg>
+          </div>
+          <h3>Cloud Storage</h3>
+          <p>Access your files anytime, from anywhere. Keep your work safe and secure.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon icon-red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z"/><path d="M9.5 12l1.8 1.8 3.2-3.6"/></svg>
+          </div>
+          <h3>Advanced Security</h3>
+          <p>Your data is protected with industry-standard encryption and privacy controls.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- footer -->
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <svg width="22" height="22" viewBox="0 0 32 32" fill="none"><circle cx="12" cy="12" r="8" fill="#7c7cf2"/><circle cx="20" cy="20" r="8" fill="#4c4cd8"/></svg>
+          Nextly
+        </div>
+        <p>Building a more productive tomorrow, one goal at a time.</p>
+        <div class="social-row">
+          <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9.5 9H13v1.7c.7-1.1 1.8-1.9 3.7-1.9 3.1 0 4.3 2 4.3 5.4V21h-4v-5.1c0-1.4-.4-2.4-1.7-2.4-1 0-1.6.7-1.9 1.4-.1.2-.1.5-.1.8V21h-4z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 00-7 3.7A11.6 11.6 0 013 4.9a4.1 4.1 0 001.3 5.5c-.7 0-1.3-.2-1.9-.5v.1c0 2 1.4 3.6 3.3 4a4.1 4.1 0 01-1.9.1c.5 1.6 2 2.8 3.8 2.9A8.2 8.2 0 012 18.6a11.6 11.6 0 006.3 1.8c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.1z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><rect x="2.5" y="6" width="19" height="12" rx="3" fill="none" stroke="#fff" stroke-width="1.8"/><path d="M10.5 9.5l5 2.5-5 2.5z" fill="#fff"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Subscribe</h4>
+        <p>Get the latest updates, tips and resources delivered to your inbox.</p>
+        <form class="subscribe-form" id="subscribe-form">
+          <label for="subscribe-email" class="visually-hidden" style="position:absolute;left:-9999px;">Email address</label>
+          <input type="email" id="subscribe-email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="subscribe-note" id="subscribe-note">We'll never share your email. Unsubscribe anytime.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Nextly. All rights reserved.</span>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
